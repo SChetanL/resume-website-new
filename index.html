@@ -1,15 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Sai Chetan Lankipalli Devarajulu | Profile</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sai Chetan Lankipalli Devarajulu | ML Engineer & Full-Stack Developer</title>
   <link rel="stylesheet" href="/assets/style.css">
+  <style>
+    .hero-section {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 80px 40px;
+      text-align: center;
+      color: #fff;
+      border-radius: 15px;
+      margin: 30px 0;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    .hero-section h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      animation: fadeInDown 1s ease;
+    }
+    .hero-tagline {
+      font-size: 1.5em;
+      margin-bottom: 30px;
+      color: #ffd700;
+      font-weight: 600;
+    }
+    .hero-description {
+      font-size: 1.2em;
+      line-height: 1.8;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+    .cta-button {
+      background: rgba(255,255,255,0.9);
+      color: #667eea;
+      padding: 15px 35px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1em;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .cta-button:hover {
+      background: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    .stats-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+      margin: 40px 0;
+    }
+    .stat-card {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .stat-card:hover {
+      transform: translateY(-5px);
+    }
+    .stat-number {
+      font-size: 3em;
+      font-weight: bold;
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+    .stat-label {
+      color: #fff;
+      font-size: 1.1em;
+    }
+    .highlights-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin: 40px 0;
+    }
+    .highlight-card {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+    .highlight-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+    }
+    .highlight-card h3 {
+      color: #ffd700;
+      margin-bottom: 15px;
+      font-size: 1.5em;
+    }
+    .highlight-card p {
+      color: #fff;
+      line-height: 1.7;
+    }
+    .quick-links {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 40px;
+      border-radius: 15px;
+      margin: 40px 0;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .quick-links h2 {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .link-item {
+      background: rgba(255,255,255,0.15);
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .link-item:hover {
+      background: rgba(255,255,255,0.25);
+      transform: translateY(-3px);
+    }
+    .link-item a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: 600;
+    }
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Sai Chetan Lankipalli Devarajulu</h1>
-    <p>Software Developer | Problem Solver | Tech Enthusiast</p>
+    <p>Machine Learning Engineer | Full-Stack Developer | AI Researcher</p>
   </header>
   
   <nav>
@@ -22,28 +170,120 @@
       <li><a href="/contact/">Contact</a></li>
     </ul>
   </nav>
-
+  
   <main>
-    <section>
-      <h2>About Me</h2>
-      <p>Welcome to my online resume! I am a passionate software developer with experience in building scalable applications, solving complex problems, and continuously learning new technologies.</p>
-      <p>Explore the sections above to learn more about my education, projects, skills, certifications, and how to get in touch with me.</p>
+    <section class="hero-section">
+      <h1>Welcome to My Portfolio</h1>
+      <p class="hero-tagline">Transforming Ideas into Intelligent Solutions</p>
+      <p class="hero-description">
+        I'm a passionate Machine Learning Engineer and Full-Stack Developer with expertise in building 
+        scalable AI applications, implementing cutting-edge deep learning models, and creating seamless 
+        web experiences. Currently pursuing my Master's in Computer Science at UT Arlington with a focus 
+        on Reinforcement Learning, Neural Networks, and Cloud Architecture.
+      </p>
+      <div class="cta-buttons">
+        <a href="/projects/" class="cta-button">View My Projects</a>
+        <a href="/contact/" class="cta-button">Get in Touch</a>
+        <a href="https://github.com/SChetanL" target="_blank" class="cta-button">GitHub Profile</a>
+      </div>
+    </section>
+    
+    <section class="stats-section">
+      <div class="stat-card">
+        <div class="stat-number">3.85</div>
+        <div class="stat-label">Master's GPA</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">6+</div>
+        <div class="stat-label">Major Projects</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">10+</div>
+        <div class="stat-label">Certifications</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">20+</div>
+        <div class="stat-label">Technologies</div>
+      </div>
     </section>
     
     <section>
-      <h2>Quick Links</h2>
-      <ul>
-        <li><a href="/education/">View My Education Background</a></li>
-        <li><a href="/projects/">Check Out My Projects</a></li>
-        <li><a href="/skills/">See My Technical Skills</a></li>
-        <li><a href="/certifications/">Browse My Certifications</a></li>
-        <li><a href="/contact/">Contact Me</a></li>
-      </ul>
+      <h2 style="text-align: center; margin: 40px 0 30px; font-size: 2.5em;">What I Bring to the Table</h2>
+      <div class="highlights-section">
+        <div class="highlight-card">
+          <h3>🤖 Machine Learning & AI</h3>
+          <p>
+            Advanced expertise in TensorFlow, PyTorch, and Scikit-learn. Specialized in deep learning, 
+            reinforcement learning, NLP, and computer vision. Published research on RL-based prompt 
+            optimization for LLMs.
+          </p>
+        </div>
+        
+        <div class="highlight-card">
+          <h3>🚀 Full-Stack Development</h3>
+          <p>
+            Proficient in React, Node.js, MongoDB, and modern web technologies. Built scalable applications 
+            handling 10,000+ daily requests with 99.9% uptime. Expert in RESTful APIs and responsive design.
+          </p>
+        </div>
+        
+        <div class="highlight-card">
+          <h3>☁️ Cloud & DevOps</h3>
+          <p>
+            AWS and GCP certified with hands-on experience in EC2, S3, Lambda, Docker, and Kubernetes. 
+            Implemented CI/CD pipelines and serverless architectures for production deployments.
+          </p>
+        </div>
+        
+        <div class="highlight-card">
+          <h3>📊 Data Science</h3>
+          <p>
+            Strong analytical skills with Pandas, NumPy, and data visualization tools. Processed 2M+ flight 
+            records achieving 92% prediction accuracy. Expert in feature engineering and ETL pipelines.
+          </p>
+        </div>
+        
+        <div class="highlight-card">
+          <h3>🎯 Problem Solving</h3>
+          <p>
+            Reduced processing time by 40% through optimization. Improved model efficiency by 35% using RL 
+            techniques. Achieved superhuman performance on multiple Atari games using DQN algorithms.
+          </p>
+        </div>
+        
+        <div class="highlight-card">
+          <h3>🤝 Team Collaboration</h3>
+          <p>
+            Led team of 4 researchers in computational neuroscience project. Active in code reviews and 
+            mentoring. Certified Scrum Master with Agile experience in cross-functional teams.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="quick-links">
+      <h2>Explore My Work</h2>
+      <div class="links-grid">
+        <div class="link-item">
+          <a href="/education/">🎓 Education Background</a>
+        </div>
+        <div class="link-item">
+          <a href="/projects/">💻 Featured Projects</a>
+        </div>
+        <div class="link-item">
+          <a href="/skills/">🔧 Technical Skills</a>
+        </div>
+        <div class="link-item">
+          <a href="/certifications/">🏆 Certifications</a>
+        </div>
+        <div class="link-item">
+          <a href="/contact/">📧 Contact Me</a>
+        </div>
+        <div class="link-item">
+          <a href="https://github.com/SChetanL" target="_blank">👨‍💻 GitHub</a>
+        </div>
+      </div>
     </section>
   </main>
-
-  <footer>
-    <p>&copy; 2025 Sai Chetan Lankipalli Devarajulu. All rights reserved.</p>
-  </footer>
 </body>
 </html>
