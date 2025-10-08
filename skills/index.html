@@ -1,15 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Skills | Sai Chetan Lankipalli Devarajulu</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | Sai Chetan Lankipalli Devarajulu</title>
   <link rel="stylesheet" href="/assets/style.css">
+  <style>
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin: 30px 0;
+    }
+    .skill-category {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+    .skill-category:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+    }
+    .skill-category h2 {
+      color: #fff;
+      margin-bottom: 20px;
+      font-size: 1.6em;
+      border-bottom: 2px solid rgba(255,255,255,0.3);
+      padding-bottom: 10px;
+    }
+    .skill-item {
+      margin: 15px 0;
+    }
+    .skill-name {
+      color: #fff;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+    .skill-level {
+      color: #ffd700;
+      font-size: 0.9em;
+    }
+    .skill-bar {
+      background: rgba(255,255,255,0.2);
+      border-radius: 10px;
+      height: 10px;
+      overflow: hidden;
+    }
+    .skill-progress {
+      background: linear-gradient(90deg, #ffd700, #ffed4e);
+      height: 100%;
+      border-radius: 10px;
+      transition: width 1s ease;
+    }
+    .skill-list {
+      list-style: none;
+      padding: 0;
+    }
+    .skill-list li {
+      color: #fff;
+      padding: 8px 0;
+      padding-left: 25px;
+      position: relative;
+    }
+    .skill-list li:before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: #ffd700;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Skills</h1>
-    <p>My Technical Expertise</p>
+    <p>Technical Expertise & Proficiency Levels</p>
   </header>
   
   <nav>
@@ -22,67 +91,166 @@
       <li><a href="/contact/">Contact</a></li>
     </ul>
   </nav>
-
+  
   <main>
-    <section>
-      <h2>Programming Languages</h2>
-      <ul>
-        <li>JavaScript (ES6+)</li>
-        <li>Python</li>
-        <li>Java</li>
-        <li>C++</li>
-        <li>TypeScript</li>
-        <li>SQL</li>
-      </ul>
-    </section>
-    
-    <section>
-      <h2>Web Technologies</h2>
-      <ul>
-        <li>HTML5, CSS3, SASS</li>
-        <li>React.js, Next.js</li>
-        <li>Node.js, Express.js</li>
-        <li>REST APIs, GraphQL</li>
-        <li>Responsive Design</li>
-      </ul>
-    </section>
-    
-    <section>
-      <h2>Databases & Cloud</h2>
-      <ul>
-        <li>MongoDB, PostgreSQL, MySQL</li>
-        <li>AWS (EC2, S3, Lambda)</li>
-        <li>Google Cloud Platform</li>
-        <li>Docker, Kubernetes</li>
-        <li>Firebase</li>
-      </ul>
-    </section>
-    
-    <section>
-      <h2>Tools & Frameworks</h2>
-      <ul>
-        <li>Git, GitHub, GitLab</li>
-        <li>VS Code, IntelliJ IDEA</li>
-        <li>Jira, Trello</li>
-        <li>TensorFlow, PyTorch</li>
-        <li>Jest, Mocha, Selenium</li>
-      </ul>
-    </section>
-    
-    <section>
-      <h2>Soft Skills</h2>
-      <ul>
-        <li>Team Collaboration</li>
-        <li>Problem Solving</li>
-        <li>Project Management</li>
-        <li>Communication</li>
-        <li>Agile Methodologies</li>
-      </ul>
-    </section>
+    <div class="skills-container">
+      <section class="skill-category">
+        <h2>Programming Languages</h2>
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>Python</span>
+            <span class="skill-level">Expert - 95%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>JavaScript/TypeScript</span>
+            <span class="skill-level">Advanced - 90%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>Java</span>
+            <span class="skill-level">Advanced - 85%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>C/C++</span>
+            <span class="skill-level">Intermediate - 75%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>SQL</span>
+            <span class="skill-level">Advanced - 88%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+        </div>
+      </section>
+      
+      <section class="skill-category">
+        <h2>Machine Learning & AI</h2>
+        <ul class="skill-list">
+          <li>TensorFlow & Keras</li>
+          <li>PyTorch</li>
+          <li>Scikit-learn</li>
+          <li>Deep Learning (CNN, RNN, LSTM)</li>
+          <li>Reinforcement Learning (DQN, PPO)</li>
+          <li>Natural Language Processing</li>
+          <li>Computer Vision (OpenCV)</li>
+          <li>Model Deployment & MLOps</li>
+          <li>Data Preprocessing & Feature Engineering</li>
+          <li>Neural Architecture Search</li>
+        </ul>
+      </section>
+      
+      <section class="skill-category">
+        <h2>Web Development</h2>
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>React.js</span>
+            <span class="skill-level">Advanced - 90%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>Node.js & Express</span>
+            <span class="skill-level">Advanced - 88%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>HTML5/CSS3/SASS</span>
+            <span class="skill-level">Expert - 95%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>REST APIs</span>
+            <span class="skill-level">Advanced - 90%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+        </div>
+      </section>
+      
+      <section class="skill-category">
+        <h2>Databases & Cloud</h2>
+        <ul class="skill-list">
+          <li>MongoDB & Mongoose</li>
+          <li>MySQL & PostgreSQL</li>
+          <li>Redis (Caching)</li>
+          <li>AWS (EC2, S3, Lambda, RDS)</li>
+          <li>Google Cloud Platform</li>
+          <li>Docker & Kubernetes</li>
+          <li>CI/CD (Jenkins, GitHub Actions)</li>
+          <li>Serverless Architecture</li>
+        </ul>
+      </section>
+      
+      <section class="skill-category">
+        <h2>Data Science & Analytics</h2>
+        <ul class="skill-list">
+          <li>Pandas & NumPy</li>
+          <li>Matplotlib & Seaborn</li>
+          <li>Jupyter Notebooks</li>
+          <li>Statistical Analysis</li>
+          <li>Data Visualization</li>
+          <li>A/B Testing</li>
+          <li>Big Data (Spark, Hadoop)</li>
+          <li>ETL Pipelines</li>
+        </ul>
+      </section>
+      
+      <section class="skill-category">
+        <h2>Development Tools</h2>
+        <ul class="skill-list">
+          <li>Git & GitHub</li>
+          <li>VS Code & PyCharm</li>
+          <li>Postman (API Testing)</li>
+          <li>Linux/Unix Systems</li>
+          <li>Agile/Scrum Methodologies</li>
+          <li>JIRA & Confluence</li>
+          <li>Unit Testing (Jest, PyTest)</li>
+          <li>Performance Optimization</li>
+        </ul>
+      </section>
+      
+      <section class="skill-category">
+        <h2>Additional Technologies</h2>
+        <ul class="skill-list">
+          <li>WebSockets & Socket.io</li>
+          <li>GraphQL</li>
+          <li>Redux & State Management</li>
+          <li>Webpack & Babel</li>
+          <li>OAuth & JWT Authentication</li>
+          <li>Stripe Payment Integration</li>
+          <li>Responsive Design</li>
+          <li>Progressive Web Apps (PWA)</li>
+        </ul>
+      </section>
+      
+      <section class="skill-category">
+        <h2>Soft Skills</h2>
+        <ul class="skill-list">
+          <li>Problem Solving & Critical Thinking</li>
+          <li>Team Collaboration</li>
+          <li>Project Management</li>
+          <li>Technical Communication</li>
+          <li>Code Review & Mentoring</li>
+          <li>Time Management</li>
+          <li>Continuous Learning</li>
+          <li>Adaptability & Innovation</li>
+        </ul>
+      </section>
+    </div>
   </main>
-
-  <footer>
-    <p>&copy; 2025 Sai Chetan Lankipalli Devarajulu. All rights reserved.</p>
-  </footer>
 </body>
 </html>
