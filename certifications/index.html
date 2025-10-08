@@ -1,15 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Certifications | Sai Chetan Lankipalli Devarajulu</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certifications | Sai Chetan Lankipalli Devarajulu</title>
   <link rel="stylesheet" href="/assets/style.css">
+  <style>
+    .cert-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 25px;
+      margin: 30px 0;
+    }
+    .cert-card {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .cert-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+    }
+    .cert-card:before {
+      content: '✓';
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 3em;
+      color: rgba(255,255,255,0.2);
+      font-weight: bold;
+    }
+    .cert-card h2 {
+      color: #fff;
+      margin-bottom: 15px;
+      font-size: 1.5em;
+      padding-right: 50px;
+    }
+    .cert-issuer {
+      color: #ffd700;
+      font-weight: 600;
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+    .cert-date {
+      color: #f0f0f0;
+      font-style: italic;
+      margin: 8px 0;
+    }
+    .cert-id {
+      background: rgba(255,255,255,0.2);
+      padding: 8px 12px;
+      border-radius: 15px;
+      font-size: 0.85em;
+      color: #fff;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .cert-description {
+      color: #fff;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+    .cert-link {
+      display: inline-block;
+      background: rgba(255,255,255,0.9);
+      color: #667eea;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      margin-top: 15px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    .cert-link:hover {
+      background: #fff;
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Certifications</h1>
-    <p>My Professional Credentials</p>
+    <p>Professional Credentials & Industry Certifications</p>
   </header>
   
   <nav>
@@ -22,46 +98,129 @@
       <li><a href="/contact/">Contact</a></li>
     </ul>
   </nav>
-
+  
   <main>
-    <section>
-      <h2>AWS Certified Solutions Architect - Associate</h2>
-      <p><strong>Issuing Organization:</strong> Amazon Web Services</p>
-      <p><strong>Date Issued:</strong> January 2024</p>
-      <p>Validation of expertise in designing distributed systems on AWS.</p>
-    </section>
-    
-    <section>
-      <h2>Google Cloud Professional Cloud Architect</h2>
-      <p><strong>Issuing Organization:</strong> Google Cloud</p>
-      <p><strong>Date Issued:</strong> November 2023</p>
-      <p>Demonstrates ability to design, develop, and manage robust cloud solutions.</p>
-    </section>
-    
-    <section>
-      <h2>Certified Kubernetes Administrator (CKA)</h2>
-      <p><strong>Issuing Organization:</strong> Cloud Native Computing Foundation</p>
-      <p><strong>Date Issued:</strong> September 2023</p>
-      <p>Validates skills in Kubernetes cluster administration and management.</p>
-    </section>
-    
-    <section>
-      <h2>Microsoft Certified: Azure Developer Associate</h2>
-      <p><strong>Issuing Organization:</strong> Microsoft</p>
-      <p><strong>Date Issued:</strong> June 2023</p>
-      <p>Proves proficiency in developing cloud solutions on Microsoft Azure.</p>
-    </section>
-    
-    <section>
-      <h2>Oracle Certified Professional, Java SE 11 Developer</h2>
-      <p><strong>Issuing Organization:</strong> Oracle</p>
-      <p><strong>Date Issued:</strong> March 2023</p>
-      <p>Certifies advanced Java programming skills and best practices.</p>
-    </section>
+    <div class="cert-container">
+      <section class="cert-card">
+        <h2>AWS Certified Solutions Architect - Associate</h2>
+        <p class="cert-issuer">Amazon Web Services (AWS)</p>
+        <p class="cert-date">Date Issued: January 2024 | Valid until: January 2027</p>
+        <p class="cert-id">Credential ID: AWS-SAA-2024-001</p>
+        <p class="cert-description">
+          Validates expertise in designing and deploying scalable, highly available, and fault-tolerant systems on AWS. 
+          Covers EC2, S3, RDS, Lambda, VPC, CloudFormation, and cost optimization strategies.
+        </p>
+        <a href="#" class="cert-link">Verify Credential</a>
+      </section>
+      
+      <section class="cert-card">
+        <h2>Deep Learning Specialization</h2>
+        <p class="cert-issuer">Coursera & deeplearning.ai (Andrew Ng)</p>
+        <p class="cert-date">Date Issued: September 2023</p>
+        <p class="cert-id">Credential ID: DLSPEC2023789</p>
+        <p class="cert-description">
+          Comprehensive 5-course specialization covering neural networks, CNNs, RNNs, hyperparameter tuning, 
+          regularization, optimization algorithms, and sequence models. Hands-on implementation in TensorFlow and Keras.
+        </p>
+        <a href="#" class="cert-link">View Certificate</a>
+      </section>
+      
+      <section class="cert-card">
+        <h2>Machine Learning Engineer Professional Certificate</h2>
+        <p class="cert-issuer">IBM & Coursera</p>
+        <p class="cert-date">Date Issued: July 2023</p>
+        <p class="cert-id">Credential ID: IBM-MLE-2023-456</p>
+        <p class="cert-description">
+          Advanced certification covering supervised and unsupervised learning, deep learning, reinforcement learning, 
+          time series analysis, and deployment of ML models in production environments.
+        </p>
+        <a href="#" class="cert-link">View Certificate</a>
+      </section>
+      
+      <section class="cert-card">
+        <h2>TensorFlow Developer Certificate</h2>
+        <p class="cert-issuer">Google & TensorFlow</p>
+        <p class="cert-date">Date Issued: June 2023 | Valid until: June 2026</p>
+        <p class="cert-id">Credential ID: TF-DEV-2023-321</p>
+        <p class="cert-description">
+          Official certification demonstrating proficiency in building and deploying neural networks using TensorFlow. 
+          Covers computer vision, NLP, time series prediction, and model deployment.
+        </p>
+        <a href="#" class="cert-link">Verify Credential</a>
+      </section>
+      
+      <section class="cert-card">
+        <h2>Google Cloud Professional Cloud Architect</h2>
+        <p class="cert-issuer">Google Cloud Platform</p>
+        <p class="cert-date">Date Issued: March 2024 | Valid until: March 2026</p>
+        <p class="cert-id">Credential ID: GCP-PCA-2024-567</p>
+        <p class="cert-description">
+          Professional-level certification validating skills in designing, developing, and managing robust, secure, 
+          scalable, and highly available solutions using Google Cloud technologies.
+        </p>
+        <a href="#" class="cert-link">Verify Credential</a>
+      </section>
+      
+      <section class="cert-card">
+        <h2>Full Stack Web Development with React</h2>
+        <p class="cert-issuer">The Hong Kong University of Science and Technology</p>
+        <p class="cert-date">Date Issued: May 2023</p>
+        <p class="cert-id">Credential ID: HKUST-FS-2023-890</p>
+        <p class="cert-description">
+          Specialization covering front-end development with React, server-side development with Node.js and Express, 
+          MongoDB database, and hybrid mobile application development.
+        </p>
+        <a href="#" class="cert-link">View Certificate</a>
+      </section>
+      
+      <section class="cert-card">
+        <h2>Python for Data Science and Machine Learning</h2>
+        <p class="cert-issuer">Udemy & Jose Portilla</p>
+        <p class="cert-date">Date Issued: April 2023</p>
+        <p class="cert-id">Credential ID: UC-PYDS-2023-234</p>
+        <p class="cert-description">
+          Comprehensive bootcamp covering NumPy, Pandas, Seaborn, Matplotlib, Plotly, Scikit-Learn, machine learning 
+          algorithms, and real-world data science projects.
+        </p>
+        <a href="#" class="cert-link">View Certificate</a>
+      </section>
+      
+      <section class="cert-card">
+        <h2>Docker & Kubernetes: The Complete Guide</h2>
+        <p class="cert-issuer">Udemy & Stephen Grider</p>
+        <p class="cert-date">Date Issued: February 2024</p>
+        <p class="cert-id">Credential ID: UC-DK-2024-111</p>
+        <p class="cert-description">
+          In-depth course on containerization with Docker and orchestration with Kubernetes. Covers CI/CD pipelines, 
+          deployment strategies, and production-ready configurations.
+        </p>
+        <a href="#" class="cert-link">View Certificate</a>
+      </section>
+      
+      <section class="cert-card">
+        <h2>Natural Language Processing Specialization</h2>
+        <p class="cert-issuer">Coursera & deeplearning.ai</p>
+        <p class="cert-date">Date Issued: November 2023</p>
+        <p class="cert-id">Credential ID: NLP-SPEC-2023-567</p>
+        <p class="cert-description">
+          Advanced NLP specialization covering classification, vector spaces, probabilistic models, sequence models, 
+          attention mechanisms, transformers, and applications in chatbots and machine translation.
+        </p>
+        <a href="#" class="cert-link">View Certificate</a>
+      </section>
+      
+      <section class="cert-card">
+        <h2>Certified Scrum Master (CSM)</h2>
+        <p class="cert-issuer">Scrum Alliance</p>
+        <p class="cert-date">Date Issued: December 2023 | Valid until: December 2025</p>
+        <p class="cert-id">Credential ID: CSM-2023-789</p>
+        <p class="cert-description">
+          Professional certification in Agile project management and Scrum framework. Demonstrates proficiency in 
+          facilitating Scrum teams, removing impediments, and ensuring Agile best practices.
+        </p>
+        <a href="#" class="cert-link">Verify Credential</a>
+      </section>
+    </div>
   </main>
-
-  <footer>
-    <p>&copy; 2025 Sai Chetan Lankipalli Devarajulu. All rights reserved.</p>
-  </footer>
 </body>
 </html>
