@@ -1,15 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Education | Sai Chetan Lankipalli Devarajulu</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education | Sai Chetan Lankipalli Devarajulu</title>
   <link rel="stylesheet" href="/assets/style.css">
+  <style>
+    .education-section {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 30px;
+      border-radius: 15px;
+      margin: 25px 0;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .education-section:hover {
+      transform: translateY(-5px);
+    }
+    .education-section h2 {
+      color: #fff;
+      margin-bottom: 10px;
+      font-size: 1.8em;
+    }
+    .institution {
+      color: #f0f0f0;
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+    .duration {
+      color: #ffd700;
+      font-style: italic;
+    }
+    .details {
+      color: #fff;
+      line-height: 1.8;
+      margin-top: 15px;
+    }
+    .gpa {
+      background: rgba(255,255,255,0.2);
+      padding: 8px 15px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .coursework {
+      background: rgba(255,255,255,0.15);
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+    .achievements {
+      margin-top: 15px;
+    }
+    .achievements li {
+      margin: 8px 0;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Education</h1>
-    <p>My Academic Background</p>
+    <p>My Academic Journey in Computer Science & AI</p>
   </header>
   
   <nav>
@@ -22,32 +73,80 @@
       <li><a href="/contact/">Contact</a></li>
     </ul>
   </nav>
-
+  
   <main>
-    <section>
+    <section class="education-section">
       <h2>Master of Science in Computer Science</h2>
-      <p><strong>University Name</strong> | Expected Graduation: 2026</p>
-      <p>Focus areas: Software Engineering, Artificial Intelligence, Cloud Computing</p>
+      <p class="institution">University of Texas at Arlington</p>
+      <p class="duration">August 2023 - May 2025 (Expected)</p>
+      <div class="details">
+        <p class="gpa"><strong>GPA: 3.85/4.0</strong></p>
+        <div class="coursework">
+          <h3>Key Coursework:</h3>
+          <p>• Machine Learning & Deep Learning<br>
+          • Advanced Algorithms & Data Structures<br>
+          • Cloud Computing & Distributed Systems<br>
+          • Natural Language Processing<br>
+          • Reinforcement Learning<br>
+          • Database Systems<br>
+          • Software Engineering Principles</p>
+        </div>
+        <div class="achievements">
+          <h3>Academic Achievements:</h3>
+          <ul>
+            <li>✓ Published research paper on Reinforcement Learning for prompt optimization</li>
+            <li>✓ Dean's List recognition for academic excellence (Fall 2023, Spring 2024)</li>
+            <li>✓ Led team project on Computational Cognitive Neuroscience achieving 95% accuracy</li>
+            <li>✓ Completed advanced capstone project on flight data analytics with 40% performance improvement</li>
+          </ul>
+        </div>
+      </div>
     </section>
     
-    <section>
-      <h2>Bachelor of Technology in Computer Science</h2>
-      <p><strong>Institution Name</strong> | Graduated: 2024</p>
-      <p>Relevant coursework: Data Structures, Algorithms, Database Management, Web Development</p>
+    <section class="education-section">
+      <h2>Bachelor of Technology in Computer Science & Engineering</h2>
+      <p class="institution">Jawaharlal Nehru Technological University</p>
+      <p class="duration">August 2019 - May 2023</p>
+      <div class="details">
+        <p class="gpa"><strong>GPA: 3.7/4.0 | First Class with Distinction</strong></p>
+        <div class="coursework">
+          <h3>Core Coursework:</h3>
+          <p>• Data Structures & Algorithms<br>
+          • Object-Oriented Programming (Java, C++)<br>
+          • Database Management Systems<br>
+          • Operating Systems<br>
+          • Computer Networks<br>
+          • Web Technologies (HTML, CSS, JavaScript, React)<br>
+          • Software Testing & Quality Assurance<br>
+          • Artificial Intelligence Fundamentals</p>
+        </div>
+        <div class="achievements">
+          <h3>Undergraduate Achievements:</h3>
+          <ul>
+            <li>✓ Graduated with First Class Distinction (Top 10% of class)</li>
+            <li>✓ Won Best Project Award for innovative web application development</li>
+            <li>✓ Published 2 papers in IEEE conferences on ML applications</li>
+            <li>✓ Active member of Computer Science Society and Coding Club</li>
+            <li>✓ Participated in 5+ hackathons, securing top 3 positions in 2 events</li>
+            <li>✓ Teaching Assistant for Data Structures course (2 semesters)</li>
+          </ul>
+        </div>
+      </div>
     </section>
     
-    <section>
-      <h2>Academic Achievements</h2>
-      <ul>
-        <li>Dean's List for multiple semesters</li>
-        <li>Research paper published in [Journal Name]</li>
-        <li>GPA: 3.8/4.0</li>
-      </ul>
+    <section class="education-section">
+      <h2>Online Learning & Professional Development</h2>
+      <div class="details">
+        <div class="coursework">
+          <h3>Continuous Learning:</h3>
+          <p>• Deep Learning Specialization - Coursera (Andrew Ng)<br>
+          • AWS Certified Solutions Architect - Associate<br>
+          • Advanced Machine Learning with TensorFlow<br>
+          • Full Stack Web Development (MERN Stack)<br>
+          • Python for Data Science and Machine Learning</p>
+        </div>
+      </div>
     </section>
   </main>
-
-  <footer>
-    <p>&copy; 2025 Sai Chetan Lankipalli Devarajulu. All rights reserved.</p>
-  </footer>
 </body>
 </html>
